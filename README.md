@@ -11,11 +11,14 @@ $ yarn add @types/styled-components -D
 
 3 - tipagem do theme, criar a pasta @types/styles.d.ts ok
 
-4 - global styles
+4 - global styles ok
 
-5 - Cores & fontes
+5 - Cores & fontes ok
 
 6 - Configurar ESLint
+instalar
+eslint
+@rocketseat/eslint-config
 
 
 Tecnologias
