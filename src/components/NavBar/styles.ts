@@ -8,6 +8,7 @@ export const NavBarContainer = styled.nav`
   padding: 2rem 5rem;
 
   position: absolute;
+  width: 90rem;
   height: 6.5rem;
   left: 0px;
   right: 0px;

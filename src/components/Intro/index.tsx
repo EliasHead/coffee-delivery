@@ -11,6 +11,8 @@ import {
   TitleContainer,
 } from './styles'
 
+import imgCapa from '../../assets/capa.svg'
+
 export function Intro() {
   return (
     <IntroContainer>
@@ -47,6 +49,10 @@ export function Intro() {
           <span>O café chega fresquinho até você</span>
         </Item4>
       </ItemsContainer>
+
+      <span>
+        <img src={imgCapa} alt="" />
+      </span>
     </IntroContainer>
   )
 }

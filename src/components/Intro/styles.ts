@@ -8,6 +8,17 @@ export const IntroContainer = styled.div`
   right: 0px;
 
   position: absolute;
+
+  img {
+    position: absolute;
+    width: 29.75rem;
+    height: 22.5rem;
+
+    margin-top: 5.75rem;
+    margin-left: 50.25rem;
+
+    background: url(ImgCapa);
+  }
 `
 
 export const TitleContainer = styled.div`
