@@ -66,3 +66,146 @@ export const SubTitle = styled.h3`
   align-self: stretch;
   flex-grow: 0;
 `
+
+export const ItemsContainer = styled.div`
+  position: absolute;
+  width: 35.4375rem;
+  height: 5.25rem;
+  margin-top: 22rem;
+  margin-left: 10rem;
+`
+
+export const BaseItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 0.75rem;
+
+  position: absolute;
+  height: 2rem;
+`
+
+export const Item1 = styled(BaseItem)`
+  width: 14.4375rem;
+  margin-left: 0px;
+  margin-top: 0px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    width: 32;
+    height: 32;
+
+    background: ${(props) => props.theme['yellow-dark']};
+    border-radius: 1000px;
+
+    svg {
+      color: white;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 130%;
+      color: ${(props) => props.theme['base-text']};
+    }
+  }
+`
+
+export const Item2 = styled(BaseItem)`
+  width: 14.4375rem;
+  margin-left: 0px;
+  margin-top: 3.25rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    width: 32;
+    height: 32;
+
+    background: ${(props) => props.theme.yellow};
+    border-radius: 1000px;
+
+    svg {
+      color: white;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 130%;
+      color: ${(props) => props.theme['base-text']};
+    }
+  }
+`
+
+export const Item3 = styled(BaseItem)`
+  width: 18.375rem;
+  margin-left: 16.9375rem;
+  margin-top: 0px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    width: 32;
+    height: 32;
+
+    background: ${(props) => props.theme['base-text']};
+    border-radius: 1000px;
+
+    svg {
+      color: white;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 130%;
+      color: ${(props) => props.theme['base-text']};
+    }
+  }
+`
+
+export const Item4 = styled(BaseItem)`
+  width: 18.375rem;
+  margin-left: 16.9375rem;
+  margin-top: 3.25rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    width: 32;
+    height: 32;
+
+    background: ${(props) => props.theme.purple};
+    border-radius: 1000px;
+
+    svg {
+      color: white;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 130%;
+      color: ${(props) => props.theme['base-text']};
+    }
+  }
+`
