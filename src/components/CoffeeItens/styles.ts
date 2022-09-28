@@ -8,7 +8,6 @@ export const CoffeeCardContainer = styled.div`
   border-radius: 6px 36px;
   background: red;
 
-  position: absolute;
   display: flex;
 
   div {
