@@ -30,7 +30,6 @@ export const CoffeListContainer = styled.div`
 export const FilterContainer = styled.div`
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
   flex-basis: 100%;
 
   width: 25.4375rem;
@@ -50,5 +49,6 @@ export const CoffeeItensConteiner = styled.div`
   position: absolute;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 `
