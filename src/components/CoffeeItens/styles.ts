@@ -6,93 +6,140 @@ export const CoffeeCardContainer = styled.div`
 
   background: ${(props) => props.theme['base-card']};
   border-radius: 6px 36px;
-  background: red;
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  div {
+  h4 {
+    font-family: 'Baloo 2';
+    font-weight: 700;
+    line-height: 130%;
+
+    margin-top: 0.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+
+    color: ${(props) => props.theme['base-subtitle']};
+
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 130%;
+
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+
+    color: ${(props) => props.theme['base-label']};
+    text-align: center;
+  }
+`
+
+export const ImageCard = styled.div`
+  width: 7.5rem;
+  height: 7.5rem;
+  margin-top: -1.25rem;
+  /* margin-left: 4.25rem; */
+
+  svg {
     width: 7.5rem;
     height: 7.5rem;
-    margin-top: -1.25rem;
-    margin-left: 4.25rem;
-    svg {
-      width: 7.5rem;
-      height: 7.5rem;
 
-      position: absolute;
-      margin: unset;
+    position: absolute;
+    margin: unset;
 
-      background: url(imgCoffee);
+    background: url(imgCoffee);
+  }
+`
+
+export const BuyConatiner = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+
+  width: 13rem;
+  height: 2.375rem;
+
+  margin-top: 33px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+
+  > span {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+
+    text-align: center;
+
+    color: ${(props) => props.theme['base-text']};
+
+    strong {
+      font-family: 'Baloo 2';
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 130%;
+
+      color: ${(props) => props.theme['base-text']};
     }
   }
 `
 
-export const CoffeeCard1 = styled(CoffeeCardContainer)`
-  margin-top: 0px;
-  margin-left: 0px;
+export const ActionsConatiner = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: 100%;
+  height: 100%;
+
+  flex: 1;
+  order: 1;
+  flex-grow: 0;
 `
 
-export const CoffeeCard2 = styled(CoffeeCardContainer)`
-  margin-top: 21.875rem;
-  margin-left: 0px;
+export const ActionsButtonCart = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+
+  width: 2.375rem;
+  height: 2.375rem;
+
+  border-radius: 6px;
+  background: ${(props) => props.theme['purple-dark']};
 `
 
-export const CoffeeCard3 = styled(CoffeeCardContainer)`
-  margin-top: 43.75rem;
-  margin-left: 0px;
-`
+export const CounterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.25rem;
 
-export const CoffeeCard4 = styled(CoffeeCardContainer)`
-  margin-top: 65.625rem;
-  margin-left: 0px;
-`
+  background: ${(props) => props.theme['base-button']};
+  border-radius: 6px;
 
-export const CoffeeCard5 = styled(CoffeeCardContainer)`
-  margin-top: 0px;
-  margin-left: 18rem;
-`
+  width: 4.5rem;
+  height: 2.375rem;
 
-export const CoffeeCard6 = styled(CoffeeCardContainer)`
-  margin-top: 21.875rem;
-  margin-left: 18rem;
-`
+  button {
+    border: 0;
+  }
 
-export const CoffeeCard7 = styled(CoffeeCardContainer)`
-  margin-top: 43.75rem;
-  margin-left: 18rem;
-`
-
-export const CoffeeCard8 = styled(CoffeeCardContainer)`
-  margin-top: 65.625rem;
-  margin-left: 18rem;
-`
-
-export const CoffeeCard9 = styled(CoffeeCardContainer)`
-  margin-top: 0px;
-  margin-left: 36rem;
-`
-
-export const CoffeeCard10 = styled(CoffeeCardContainer)`
-  margin-top: 21.875rem;
-  margin-left: 36rem;
-`
-
-export const CoffeeCard11 = styled(CoffeeCardContainer)`
-  margin-top: 43.75rem;
-  margin-left: 36rem;
-`
-
-export const CoffeeCard12 = styled(CoffeeCardContainer)`
-  margin-top: 0px;
-  margin-left: 54rem;
-`
-
-export const CoffeeCard13 = styled(CoffeeCardContainer)`
-  margin-top: 21.875rem;
-  margin-left: 54rem;
-`
-
-export const CoffeeCard14 = styled(CoffeeCardContainer)`
-  margin-top: 43.75rem;
-  margin-left: 54rem;
+  input {
+    width: 20px;
+    border: 0;
+    background: ${(props) => props.theme['base-button']};
+  }
 `
