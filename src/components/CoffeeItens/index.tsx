@@ -37,7 +37,7 @@ export function CoffeeItens({ img }: CoffeeItensProps) {
               <Minus size={22} color="purple" />
             </button>
 
-            <input type="text" value="1" />
+            <input type="text" defaultValue="1" />
 
             <button>
               <Plus size={22} color="purple" />

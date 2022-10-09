@@ -4,56 +4,30 @@ import {
   CoffeeItensConteiner,
 } from './styles'
 
+import { api } from '../../lib/axios'
+
 import { Tag } from '../Tag'
 
 import { CoffeeItens } from '../CoffeeItens'
+import { useEffect, useState } from 'react'
 
-const coffees = [
-  {
-    img: 'src/assets/coffee1.svg',
-  },
-  {
-    img: 'src/assets/coffee2.svg',
-  },
-  {
-    img: 'src/assets/coffee3.svg',
-  },
-  {
-    img: 'src/assets/coffee4.svg',
-  },
-  {
-    img: 'src/assets/coffee5.svg',
-  },
-  {
-    img: 'src/assets/coffee6.svg',
-  },
-  {
-    img: 'src/assets/coffee7.svg',
-  },
-  {
-    img: 'src/assets/coffee8.svg',
-  },
-  {
-    img: 'src/assets/coffee9.svg',
-  },
-  {
-    img: 'src/assets/coffee10.svg',
-  },
-  {
-    img: 'src/assets/coffee11.svg',
-  },
-  {
-    img: 'src/assets/coffee12.svg',
-  },
-  {
-    img: 'src/assets/coffee13.svg',
-  },
-  {
-    img: 'src/assets/coffee14.svg',
-  },
-]
+interface CoffeeProps {
+  img: string
+}
 
 export function CoffeeList() {
+  const [coffees, setCoffees] = useState<CoffeeProps[]>([])
+
+  async function buscaDados() {
+    const response = await api.get('http://localhost:3000/coffees')
+
+    setCoffees(response.data)
+  }
+
+  useEffect(() => {
+    buscaDados()
+  }, [])
+
   return (
     <CoffeListContainer>
       <h1>Nossos cafés</h1>
