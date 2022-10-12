@@ -11,9 +11,19 @@ import {
 
 export interface CoffeeItensProps {
   img: string
+  tag?: string[]
+  title: string
+  description: string
+  price: number
 }
 
-export function CoffeeItens({ img }: CoffeeItensProps) {
+export function CoffeeItens({
+  img,
+  tag,
+  title,
+  description,
+  price,
+}: CoffeeItensProps) {
   return (
     <CoffeeCardContainer>
       <ImageCard>
@@ -22,13 +32,13 @@ export function CoffeeItens({ img }: CoffeeItensProps) {
 
       <Tag text="tradicional" />
 
-      <h4>Expresso Tradicional</h4>
+      <h4>{title}</h4>
 
-      <p>O tradicional café feito com água quente e grãos moídos</p>
+      <p>{description}</p>
 
       <BuyConatiner>
         <span>
-          R$ <strong>9,90</strong>
+          R$ <strong>{price}</strong>
         </span>
 
         <ActionsConatiner>

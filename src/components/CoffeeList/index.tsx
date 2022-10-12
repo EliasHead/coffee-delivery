@@ -13,6 +13,10 @@ import { useEffect, useState } from 'react'
 
 interface CoffeeProps {
   img: string
+  tag?: string[]
+  title: string
+  description: string
+  price: number
 }
 
 export function CoffeeList() {
@@ -41,7 +45,15 @@ export function CoffeeList() {
 
       <CoffeeItensConteiner>
         {coffees.map((coffee) => {
-          return <CoffeeItens key={coffee.img} img={coffee.img} />
+          return (
+            <CoffeeItens
+              key={coffee.img}
+              img={coffee.img}
+              title={coffee.title}
+              description={coffee.description}
+              price={coffee.price}
+            />
+          )
         })}
       </CoffeeItensConteiner>
     </CoffeListContainer>
