@@ -11,15 +11,23 @@ import { Tag } from '../Tag'
 import { CoffeeItens } from '../CoffeeItens'
 import { useEffect, useState } from 'react'
 
-interface CoffeeProps {
-  img: string
+type CoffeeProps = {
+  id: number
+  imgUrl: string
   tag?: string[]
   title: string
   description: string
   price: number
 }
 
-export function CoffeeList() {
+export function CoffeeList({
+  id,
+  imgUrl,
+  tag,
+  title,
+  description,
+  price,
+}: CoffeeProps) {
   const [coffees, setCoffees] = useState<CoffeeProps[]>([])
 
   async function buscaDados() {
@@ -47,8 +55,9 @@ export function CoffeeList() {
         {coffees.map((coffee) => {
           return (
             <CoffeeItens
-              key={coffee.img}
-              img={coffee.img}
+              key={coffee.id}
+              id={coffee.id}
+              imgUrl={coffee.imgUrl}
               title={coffee.title}
               description={coffee.description}
               price={coffee.price}

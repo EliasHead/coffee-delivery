@@ -62,7 +62,7 @@ export const BuyConatiner = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1rem;
 
   width: 13rem;
   height: 2.375rem;
